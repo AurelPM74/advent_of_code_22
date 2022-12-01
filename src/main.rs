@@ -1,5 +1,11 @@
-use advent_of_code_22::day_1;
+mod days;
+mod utils;
+
+use days::day1;
+
+
 
 fn main() {
-    println!("Hello, world!");
+    
+    println!("{}",day1::solve_2());
 }
