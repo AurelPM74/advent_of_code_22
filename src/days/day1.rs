@@ -5,7 +5,7 @@ use crate::utils;
 pub fn solve_1() -> u32{
 
     //Load the input as a vector of strings
-    let mut string_input = utils::read_input_of_the_day_lines(1);
+    let string_input = utils::read_input_of_the_day_lines(1);
 
     //Encapsulate the input to get a vec of vec, containing the calories each elf hold
     let encapsulated_input = utils::sub_array_block_from_delim(string_input, "".to_string());
@@ -29,7 +29,7 @@ pub fn solve_1() -> u32{
 
 pub fn solve_2() -> u32{
      //Load the input as a vector of strings
-     let mut string_input = utils::read_input_of_the_day_lines(1);
+     let string_input = utils::read_input_of_the_day_lines(1);
 
      //Encapsulate the input to get a vec of vec, containing the calories each elf hold
      let encapsulated_input = utils::sub_array_block_from_delim(string_input, "".to_string());
