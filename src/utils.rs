@@ -59,6 +59,9 @@ where T : PartialEq + Clone{
 
         }
     }
+    if !temp_sub_array.is_empty() {
+        final_array.push(temp_sub_array.clone())
+    }
     final_array
 
 }
