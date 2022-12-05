@@ -25,7 +25,7 @@ pub fn solve_1() -> u32{
                                                  .collect::<Vec<_>>();
     
     let input_to_indices = split_input.into_iter()
-                                                      .map(|vec|(indices.get(&(vec[0])).unwrap(), indices.get(&vec[1]).unwrap()))
+                                                      .map(|vec|(indices.get(&vec[0]).unwrap(), indices.get(&vec[1]).unwrap()))
                                                       .collect::<Vec<_>>();
 
     let scores_of_rounds: Vec<u32> = input_to_indices.into_iter().map(|(a, b)| loup_table[*a][*b]).collect();
