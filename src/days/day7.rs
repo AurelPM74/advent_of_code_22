@@ -219,7 +219,7 @@ pub fn solve_1()-> u32{
 
 pub fn solve_2()-> u32{
     //Read the input
-    let mut input = read_input_of_the_day_lines(7);
+    let input = read_input_of_the_day_lines(7);
 
     //Find all the directory that have size more than 3000000, find the minimal among them
     let size = min_free_space(input);
