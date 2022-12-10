@@ -28,6 +28,20 @@ pub fn read_input_of_the_day_lines(day: u8) -> Vec<String>{
           .map(|l| l.unwrap())
           .collect()
 }  
+//REad lines from path 
+pub fn read_input_path(path : &str) -> Vec<String>{
+
+    //Open file
+    let file = fs::File::open(path)
+        .unwrap_or_else(|err| panic!("Unable to retreive inputs from {}, error: {}", path, err));
+
+    let reader = BufReader::new(file);
+
+    reader.lines()
+          .map(|l| l.unwrap())
+          .collect()
+}  
+
 
 //take a reference to an array containing strings and return the array of u32, panic if not possible
 pub fn array_string_to_int(array_string: &Vec<String>) -> Vec<u32>{
