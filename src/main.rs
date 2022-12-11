@@ -6,7 +6,7 @@ mod days;
 mod utils;
 use std::time::{Duration, Instant};
 
-use days::{day1, day2, day3, day4, day5, day6, day7, day8, day9, day10};
+use days::{day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11};
 
 
 
@@ -19,9 +19,10 @@ fn main() {
     //println!("The solution 1 for day 6 is: {}, the second is {}", day6::solve_1(), day6::solve_2());
     //println!("The solution 1 for day 7 is: {}, the second is {}", day7::solve_1(), day7::solve_2());
     //println!("The solution 1 for day 8 is: {}, the second is {}", day8::solve_1(), day8::solve_2());
-    println!("The solution 1 for day 9 is: {}, the second is {}", day9::solve_1(), day9::solve_2());
+    //println!("The solution 1 for day 9 is: {}, the second is {}", day9::solve_1(), day9::solve_2());
     //Print the letters of day 10 part 2, should be "ELPLZGZL"
-    day10::solve_2();
-    println!("The solution 1 for day 10 is: {}, the crt output is drawn above", day10::solve_1());
+    //day10::solve_2();
+    //println!("The solution 1 for day 10 is: {}, the crt output is drawn above", day10::solve_1());
+    println!("The solution 1 for day 11 is: {}, the second is {}", day11::solve_1(), day11::solve_2());
    
 }
