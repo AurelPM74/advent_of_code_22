@@ -75,12 +75,13 @@ fn parse_input(input: Vec<String>) -> Vec<Vec<u32>>{
 
 }
 
-fn row_to_col(input: &Vec<Vec<u32>>) ->Vec<Vec<u32>>{
+pub fn row_to_col<T>(input: &Vec<Vec<T>>) ->Vec<Vec<T>>
+where T: Copy{
     let i_columns = 0..= input[0].len()-1; 
     let mut columns = Vec::new();
     //Not really optimized, could not think of a good way for now
     for i in i_columns{
-        let col:Vec<u32> = input.iter()
+        let col:Vec<T> = input.iter()
                                 .map(|x| x[i])
                                 .collect();
         columns.push(col);

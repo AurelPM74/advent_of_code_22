@@ -2,7 +2,7 @@ use std::borrow::Borrow;
 use primefactor;
 use itertools::Dedup;
 
-const big_number: i128 = 2*3*5*7*11*13*17*19;
+const big_number: i128 = 2*3*5*7*11*13*17*19*23;
 
 //Monkey structure, it will have a list of currently hold items
 //The number of the monkey,

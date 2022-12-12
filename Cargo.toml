@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 itertools = "0.10.5"
 prime-factor = "0.4.3"
+fast_paths = "0.2.0"
 
