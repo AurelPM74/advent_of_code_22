@@ -8,7 +8,7 @@ pub fn solve_1() -> u32{
     let string_input = utils::read_input_of_the_day_lines(1);
 
     //Encapsulate the input to get a vec of vec, containing the calories each elf hold
-    let encapsulated_input = utils::sub_array_block_from_delim(string_input, "".to_string());
+    let encapsulated_input = utils::sub_array_block_from_delim(&string_input, "".to_string());
 
     //Convert each "word" string into int.
     let input : Vec<Vec<u32>> = encapsulated_input.into_iter()
@@ -32,7 +32,7 @@ pub fn solve_2() -> u32{
      let string_input = utils::read_input_of_the_day_lines(1);
 
      //Encapsulate the input to get a vec of vec, containing the calories each elf hold
-     let encapsulated_input = utils::sub_array_block_from_delim(string_input, "".to_string());
+     let encapsulated_input = utils::sub_array_block_from_delim(&string_input, "".to_string());
  
      //Convert each "word" string into int.
      let input : Vec<Vec<u32>> = encapsulated_input.into_iter()

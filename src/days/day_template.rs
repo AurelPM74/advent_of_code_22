@@ -1,4 +1,4 @@
-
+use crate::utils;
 
 //First part of the day
 pub fn solve_1() -> u32{

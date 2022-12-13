@@ -28,7 +28,7 @@ pub fn read_input_of_the_day_lines(day: u8) -> Vec<String>{
           .map(|l| l.unwrap())
           .collect()
 }  
-//REad lines from path 
+//Read lines from path 
 pub fn read_input_path(path : &str) -> Vec<String>{
 
     //Open file
@@ -55,16 +55,16 @@ pub fn array_string_to_int(array_string: &Vec<String>) -> Vec<u32>{
 //take vectors of variables having the len() method, encapsulate in a sub-array, all blocks delimited by empty strings,
 //Destroy original array
 // ["a", "a", "", "b"] --> [["a","a"],["b"]]
-pub fn sub_array_block_from_delim<T>(vector: Vec<T>, delimiter: T) -> Vec<Vec<T>>
+pub fn sub_array_block_from_delim<T>(vector: &Vec<T>, delimiter: T) -> Vec<Vec<T>>
 where T : PartialEq + Clone{
     
     let mut final_array = Vec::new();
     let mut temp_sub_array = Vec::new();
     
     for word in vector.into_iter(){
-        if word != delimiter{
+        if *word != delimiter{
 
-            temp_sub_array.push(word);
+            temp_sub_array.push(word.clone());
 
         } else {
 

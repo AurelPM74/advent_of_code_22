@@ -57,7 +57,7 @@ pub fn solve_1() -> String{
     let input_lines = read_input_of_the_day_lines(5);
 
     //We extract the crate positions from the move, separating the to at the empty line
-    let position_instruction = sub_array_block_from_delim(input_lines, String::from(""));
+    let position_instruction = sub_array_block_from_delim(&input_lines, String::from(""));
     let (positions, instructions) = (position_instruction[0].clone(), position_instruction[1].clone()); 
 
     //We compute the list of name of each crate in each stack
@@ -86,7 +86,7 @@ pub fn solve_2() -> String{
     let input_lines = read_input_of_the_day_lines(5);
 
     //We extract the crate positions from the move, separating the to at the empty line
-    let position_instruction = sub_array_block_from_delim(input_lines, String::from(""));
+    let position_instruction = sub_array_block_from_delim(&input_lines, String::from(""));
     let (positions, instructions) = (position_instruction[0].clone(), position_instruction[1].clone()); 
 
     //We compute the list of name of each crate in each stack
