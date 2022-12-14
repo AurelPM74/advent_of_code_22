@@ -41,7 +41,7 @@ fn less(packet_1: &Packet, packet_2: &Packet) -> bool {
 
 //parse a packet recursively
 fn parse_packet(string_to_parse: &Vec<char>) -> Packet{
-    //packet is the line of type "[1,[2,[3,[4,[5,6,7]]]],8,9]"
+    //packet is a line of type "[1,[2,[3,[4,[5,6,7]]]],8,9]"
 
     //if the string is one number:
     if string_to_parse[0] != '[' {
